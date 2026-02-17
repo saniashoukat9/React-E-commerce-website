@@ -1,6 +1,5 @@
 import React from 'react';
-
-const links = ['overview', 'orders', 'products', 'customers', 'reports', 'settings'];
+import { ADMIN_SIDEBAR_LINKS } from '../../data/adminDashboardData';
 
 function AdminSidebar({ activeSection, onSectionSelect }) {
   return (
@@ -8,7 +7,7 @@ function AdminSidebar({ activeSection, onSectionSelect }) {
       <h5 className="mb-1">Admin Panel</h5>
       <p className="text-white-50 small mb-3">Quick Navigation</p>
       <div className="d-flex flex-column gap-2">
-        {links.map((item) => (
+        {ADMIN_SIDEBAR_LINKS.map((item) => (
           <button
             key={item}
             type="button"

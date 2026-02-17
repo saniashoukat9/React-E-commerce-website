@@ -14,9 +14,11 @@ The cart flow is interactive and behaves like a real store cart:
 
 The Auth page provides login/signup UI with mode switching and client-side validation (required inputs and minimum password length), along with feedback alerts for successful or invalid form submission.
 
-The Admin Dashboard is implemented as a separate route with its own layout and sidebar navigation. It includes overview blocks plus product management actions (add, edit, delete). Product updates are persisted in `localStorage`, so admin changes remain available after page refresh.
+The Admin Dashboard is implemented as a separate route with its own layout and sidebar navigation. Sidebar clicks switch sections (`overview`, `orders`, `products`, `customers`, `reports`, `settings`) using query params (`/admin?section=...`).  
 
-Overall, the project follows reusable component architecture, route-based navigation with React Router, and Bootstrap + custom CSS styling for responsive layout, consistent theme, and interactive UI effects.
+
+
+Overall, the project follows reusable component architecture, route-based navigation with React Router, and Bootstrap + custom CSS styling for responsive layout, consistent theme, and interactive UI effects and Cart functionality.
 
 ## Pages/Components Implemented
 
@@ -32,11 +34,13 @@ Overall, the project follows reusable component architecture, route-based naviga
 - `Navbar`
 - `Footer`
 - `ProductCard`
-- `AdminSidebar`
+- `AdminSidebar` 
+- `AdminDashboardHeader` 
+- `AdminSectionContent` 
 
 ### Data Files
 - `products.js`
-- `adminData.js`
+- `adminDashboardData.js`
 
 ## Technologies Used
 - React
