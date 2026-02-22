@@ -13,7 +13,7 @@ function AdminDashboardHeader({ onBackToHome, onLogout }) {
             <input
               type="search"
               className="form-control admin-search-input"
-              placeholder="Static layout mode"
+              placeholder="Search..."
             />
           </div>
         </div>
